@@ -7,13 +7,13 @@ import javafx.scene.Parent;
 import javafx.fxml.FXMLLoader;
 import java.io.IOException;
 
-public class AutoMinderApp extends Application
+public class AutoMinderApp extends Application 
 {
    @Override
    public void start(Stage initialstage) throws IOException
    {
       Parent root = FXMLLoader.load(getClass().getResource("MainMenu.fxml"));
-      Scene scene = new Scene(root, 600, 400);
+      Scene scene = new Scene(root, 400, 400);
       initialstage.setScene(scene);
       initialstage.setTitle("AutoMinder");
       initialstage.show();

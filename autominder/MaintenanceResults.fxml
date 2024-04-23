@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autominder.MaintenanceResultsController">
+   <children>
+      <Label layoutX="3.0" layoutY="62.0" text="Year:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="89.0" text="Make:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="111.0" prefHeight="21.0" prefWidth="46.0" text="Model:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="5.0" layoutY="140.0" text="Mileage:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="5.0" layoutY="175.0" text="Next Oil Change Due In:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="193.0" text="Miles" />
+      <Label fx:id="OilChangeMiles" layoutX="7.0" layoutY="193.0" text="-2000">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Line endX="213.10003662109375" layoutX="93.0" layoutY="174.0" startX="-100.0" AnchorPane.leftAnchor="-7.5" AnchorPane.rightAnchor="-6.60003662109375" />
+      <Line endX="172.3999786376953" layoutX="136.0" layoutY="211.0" startX="-145.0" AnchorPane.leftAnchor="-9.5" AnchorPane.rightAnchor="-8.89996337890625" />
+      <Label layoutX="7.0" layoutY="212.0" text="Next Engine Air Filter Due in:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="AirFilterMiles" layoutX="6.0" layoutY="230.0" text="10000">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="230.0" text="Miles" />
+      <Line endX="222.99998474121094" layoutX="83.0" layoutY="248.0" startX="-91.70001220703125" AnchorPane.leftAnchor="-9.20001220703125" AnchorPane.rightAnchor="-6.5" />
+      <Label layoutX="5.0" layoutY="249.0" text="Next Tire Replacement Due In:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="TireReplacementMiles" layoutX="5.0" layoutY="267.0" text="0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="267.0" text="Miles" />
+      <Button fx:id="BackButton" layoutX="-1.0" layoutY="-3.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="36.0" prefWidth="34.0" style="-fx-background-color: darkblue;" text="&lt;" textFill="WHITE" />
+      <Button fx:id="HomeButton" layoutX="236.0" layoutY="-3.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="36.0" prefWidth="67.0" style="-fx-background-color: darkblue;" text="Home" textFill="WHITE" />
+      <Line endX="198.39999389648438" layoutX="106.0" layoutY="285.0" startX="-108.0" />
+      <Label layoutX="4.0" layoutY="285.0" text="Next Tire Roatation Due In:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="TireRotationMiles" layoutX="4.0" layoutY="303.0" text="-2500">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="303.0" text="Miles" />
+      <Line endX="179.99996948242188" layoutX="118.0" layoutY="322.0" startX="-120.0" />
+      <Label layoutX="6.0" layoutY="322.0" text="Next Battery Replacement Due In:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="BatteryReplacementMiles" layoutX="4.0" layoutY="343.0" text="0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="343.0" text="Miles" />
+      <Line endX="167.0" layoutX="133.0" layoutY="361.0" startX="-143.40000915527344" />
+      <Label layoutX="2.0" layoutY="360.0" text="Next Spark Plug Replacement Due In:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="SparkPlugReplacementMiles" layoutX="1.0" layoutY="377.0" text="0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="377.0" text="Miles" />
+      <Label fx:id="AirFilterOverdue" layoutX="214.0" layoutY="221.0" text="OVERDUE" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="TireReplacementOverdue" layoutX="214.0" layoutY="258.0" text="OVERDUE" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="OilChangeOverdue" layoutX="214.0" layoutY="184.0" text="OVERDUE" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="TireRotationOverdue" layoutX="214.0" layoutY="294.0" text="OVERDUE" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="BatteryReplacementOverdue" layoutX="214.0" layoutY="334.0" text="OVERDUE" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="SparkPlugReplacementOverdue" layoutX="214.0" layoutY="369.0" text="OVERDUE" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="yearLabel" layoutX="41.0" layoutY="62.0" text="2000" />
+      <Label fx:id="makeLabel" layoutX="48.0" layoutY="89.0" text="Hyundai" />
+      <Label fx:id="modelLabel" layoutX="53.0" layoutY="113.0" text="Civic" />
+      <Label fx:id="mileageLabel" layoutX="61.0" layoutY="140.0" text="50000" />
+      <Label layoutX="32.0" layoutY="-4.0" prefHeight="38.0" prefWidth="218.0" style="-fx-background-color: darkblue;" text="                               Results" textFill="WHITE" />
+   </children>
+</AnchorPane>
