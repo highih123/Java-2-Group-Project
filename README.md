@@ -9,7 +9,7 @@ Welcome to the AutoMinder repository! This program allows users to track car inf
 - Calculate and display when each maintenance task is due based on the entered information.
 ### Prerequisites
 - Java Development Kit (JDK) installed
-- SQL database
+- JDBC API
 - Scene Builder
 - Latest version of Git
 ### Cloning the Repository
@@ -17,7 +17,6 @@ Welcome to the AutoMinder repository! This program allows users to track car inf
 - Download all files and ensure they are in a folder named: autominder
 - Database must be in a folder named: resources
 - The database folder(resources) is outside of the package.
-
 ### ALTERNATIVELY TO CLONE:
 - git clone https://github.com/highih123/Java-2-Group-Project.git
 - cd Java-2-Group-Project
