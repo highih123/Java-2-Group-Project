@@ -23,7 +23,7 @@ Welcome to the AutoMinder repository! This program allows users to track car inf
 ### Executing program
 - Download the zip file for the AutoMinder repository
 - Open each .java file in Jgrasp
-- upload sqlite-jdbc-3.45.2.0.jar to Path/ Classpath > Workspace click "new" and add the database jar file to the directory path
+- upload sqlite-jdbc-x.xx.x.x.jar to Path/ Classpath > Workspace click "new" and add the database jar file to the directory path
 - Compile and run AutoMinderApp.java
 - Use the program as prompted!
 ### Creators:
