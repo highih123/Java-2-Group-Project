@@ -9,14 +9,14 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autominder.ExpensesController">
    <children>
     <Button fx:id="LogExpensesButton" layoutX="174.0" layoutY="552.0" mnemonicParsing="false" onAction="#handleLogExpensesButton" prefHeight="33.0" prefWidth="52.0" style="-fx-background-color: darkblue;" text="Log" textFill="WHITE" />
-      <TextField fx:id="tireExpensesTextField" layoutX="22.0" layoutY="325.0" onAction="#handleTireExpensesTextField" text="500" />
-      <Label layoutX="56.0" layoutY="307.0" text="Tire Expenses" />
-      <TextField fx:id="gasExpensesTextField" layoutX="23.0" layoutY="384.0" onAction="#handleGasExpensesTextField" text="565" />
+      <TextField fx:id="tireExpensesTextField" layoutX="22.0" layoutY="325.0" prefHeight="26.0" prefWidth="198.0" promptText="Enter expenses as a whole number" />
+      <Label layoutX="56.0" layoutY="307.0" text="New Tire Expenses" />
+      <TextField fx:id="gasExpensesTextField" layoutX="23.0" layoutY="384.0" prefHeight="26.0" prefWidth="198.0" promptText="Enter expenses as a whole number" />
       <Label layoutX="10.0" layoutY="388.0" text="\$" />
-      <Label layoutX="22.0" layoutY="422.0" text="Motor Maintenance Expenses" />
+      <Label layoutX="22.0" layoutY="422.0" text="New Motor Maintenance Expenses" />
       <Label layoutX="10.0" layoutY="447.0" text="\$" />
-      <TextField fx:id="motorMaintenanceExpenses" layoutX="23.0" layoutY="443.0" onAction="#handleMotorMaintenanceExpenses" text="234" />
-      <Label layoutX="48.0" layoutY="366.0" text="Gas Expenses" />
+      <TextField fx:id="motorMaintenanceExpenses" layoutX="23.0" layoutY="443.0" prefHeight="26.0" prefWidth="198.0" promptText="Enter expenses as a whole number" />
+      <Label layoutX="48.0" layoutY="366.0" text="New Gas Expenses" />
       <Label layoutX="10.0" layoutY="329.0" text="\$" />
       <Label layoutX="35.0" layoutY="183.0" text="Year:" />
       <Label layoutX="34.0" layoutY="216.0" text="Make:" />

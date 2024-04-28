@@ -21,16 +21,18 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <TableView fx:id="tableView" layoutX="-3.0" layoutY="67.0" onMouseClicked="#handleTableView" prefHeight="333.0" prefWidth="407.0">
+      <TableView fx:id="tableView" layoutX="-3.0" layoutY="60.0" onMouseClicked="#handleTableView" prefHeight="295.0" prefWidth="408.0">
         <columns>
-          <TableColumn fx:id="yearColumn" prefWidth="75.0" text="Year" />
-          <TableColumn fx:id="makeColumn" prefWidth="96.800048828125" text="Make" />
-            <TableColumn fx:id="modelColumn" prefWidth="94.39997863769531" text="Model" />
-            <TableColumn fx:id="mileageColumn" prefWidth="139.0" text="Mileage" />
+          <TableColumn fx:id="yearColumn" prefWidth="63.999998569488525" text="Year" />
+          <TableColumn fx:id="makeColumn" prefWidth="92.00000762939453" text="Make" />
+            <TableColumn fx:id="modelColumn" prefWidth="93.60003662109375" text="Model" />
+            <TableColumn fx:id="mileageColumn" prefWidth="68.79998779296875" text="Mileage" />
+            <TableColumn fx:id="expensesColumn" prefWidth="90.39996337890625" text="Expenses" />
         </columns>
       </TableView>
       <Button fx:id="searchButton" layoutX="275.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleSearchButton" prefHeight="10.0" prefWidth="54.0" text="Search" />
       <Label layoutX="38.0" layoutY="34.0" text="Search by year:" />
       <TextField fx:id="yearTextField" layoutX="126.0" layoutY="30.0" onAction="#handleYearTextField" />
+      <Button fx:id="confirmCarButton" layoutX="161.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleConfirmCarButton" text="Confirm Car" />
    </children>
 </Pane>

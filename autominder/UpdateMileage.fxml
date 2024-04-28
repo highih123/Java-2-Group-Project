@@ -15,7 +15,7 @@
       <Label layoutX="38.0" layoutY="258.0" text="Model:" />
       <Label fx:id="modelLabel" layoutX="86.0" layoutY="258.0" text="Civic" />
       <Label layoutX="71.0" layoutY="323.0" text="Current Mileage" textFill="#2b17d9" />
-      <TextField fx:id="currentMileageTextField" layoutX="71.0" layoutY="348.0" onAction="#handleCurrentMileageTextField" />
+      <TextField fx:id="currentMileageTextField" layoutX="71.0" layoutY="348.0" promptText="Enter a whole number" />
       <Button fx:id="continueButton" layoutX="118.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleContinueButton" style="-fx-background-color: darkblue;" text="Continue" textFill="WHITE" />
       <Button fx:id="backButton" layoutY="-4.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="52.0" prefWidth="75.0" style="-fx-background-color: darkblue;" text="&lt;" textFill="WHITE" />
       <Label layoutX="61.0" layoutY="-1.0" prefHeight="50.0" prefWidth="241.0" style="-fx-background-color: darkblue;" text="        Update Mileage" textFill="WHITE">

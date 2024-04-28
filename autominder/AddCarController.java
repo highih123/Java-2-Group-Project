@@ -17,9 +17,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import java.lang.reflect.InvocationTargetException;
 
 
-public class AddCarController
- {
-private Model model;
+public class AddCarController //Controller for AddCar
+{
+   private Model model;
 
    @FXML
     private Button BackButton;
@@ -44,9 +44,13 @@ private Model model;
 
    @FXML
     private TextField YearTextField;
+    
+   @FXML
+    private TextField ExpensesTextField;
 
    @FXML
     private void handleBackButton(ActionEvent event) throws IOException
+    /*Loads MainMenu.fxml through the back button press*/
    {
       FXMLLoader loader = new FXMLLoader();
       loader.setLocation(getClass().getResource("MainMenu.fxml"));
@@ -58,13 +62,9 @@ private Model model;
    }
 
    @FXML
-    void handleCloseButton(ActionEvent event) 
-   {
-      System.exit(0);
-   }
-
-   @FXML
    private void handleContinueButton(ActionEvent event) throws IOException
+   /*Loads MainMenu.fxml through the continue button press.
+   Inserts the user inputs in the textfields into the Cars Database */
    {
       FXMLLoader loader = new FXMLLoader();
       loader.setLocation(getClass().getResource("MainMenu.fxml"));
@@ -75,31 +75,12 @@ private Model model;
       loader.<MainMenuController>getController().setModel(model);
       stage.show();
       
-      model.insertCarList(YearTextField.getText(), MakeTextField.getText(), ModelTextField.getText(), MileageTextField.getText());
-      
-      
-      }
-      
-      //CODE FOR SAVING NEW CAR YEAR,MAKE,MODEL,MILEAGE ENTERED BY USER
-   
-
-
-   @FXML
-    void handleDeleteButton(ActionEvent event)
-   {
-      //CODE FOR DELETING A SAVED CAR
+      model.insertCarList(YearTextField.getText(), MakeTextField.getText(), ModelTextField.getText(), MileageTextField.getText(), ExpensesTextField.getText());    
    }
    
-   public void setModel(Model model)
+   public void setModel(Model model) // Sets this model equal to the initial model. 
    {
       this.model = model;
    }
-   
-   public void UserInput()
-   {
-    
-   }
-   
-   // YearTextField.getText(), MakeTextField.getText(), ModelTextField.getText(), MileageTextField.getText()
 
 }

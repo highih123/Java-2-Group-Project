@@ -17,9 +17,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.collections.ObservableList;
 import java.io.IOException;
 
-public class MainMenuController 
+public class MainMenuController //Controller for MainMenu.fxml
 {
-    private Model model;
+   private Model model;
 
    @FXML
     private Button AddACarButton;
@@ -33,8 +33,9 @@ public class MainMenuController
 
    @FXML
     private void handleAddACarButton(ActionEvent event) throws IOException
+    /* Loads AddCar.fxml through the Add a Car button*/
    {
-  
+   
       FXMLLoader loader = new FXMLLoader();
       loader.setLocation(getClass().getResource("AddCar.fxml"));
       Parent root = loader.load();
@@ -42,13 +43,13 @@ public class MainMenuController
       Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
       stage.setScene(scene);
       loader.<AddCarController>getController().setModel(model);
-      
       stage.show();
    }
 
    @FXML
     private void handleChooseACarButton(ActionEvent event) throws IOException
-    {
+    //Loads SelectAVehicle.fxml through the Choose A Car button
+   {
     
       FXMLLoader loader = new FXMLLoader();
       loader.setLocation(getClass().getResource("SelectAVehicle.fxml"));
@@ -62,26 +63,26 @@ public class MainMenuController
       loader.<SelectAVehicleController>getController().fakeQuery();
       loader.<SelectAVehicleController>getController().setModel(model);
       stage.show();
-
+   
    }
 
    @FXML
     void handleCloseButton(ActionEvent event) 
+    //Forces the app to close through the Close Button press
    {
       System.exit(0);
    }
    
-   public void setModel(Model model)
+   public void setModel(Model model) 
+   //Sets the model equal to the initialize() method's model
    {
       this.model = model;
    }
    
    @FXML
-   public void initialize()
+   public void initialize() // Initializes model
    {
       model = new Model();
    }  
-   
-  
    
 }

@@ -14,16 +14,18 @@
       <Text layoutX="23.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Model:" />
       <Text layoutX="26.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year:" />
       <Text layoutX="19.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mileage:" />
-      <TextField fx:id="YearTextField" layoutX="57.0" layoutY="87.0" prefHeight="25.0" prefWidth="218.0" promptText="Enter Year car was made as a number" />
-      <TextField fx:id="MakeTextField" layoutX="57.0" layoutY="138.0" prefHeight="25.0" prefWidth="172.0" promptText="Enter Make of car as a String" />
-      <TextField fx:id="ModelTextField" layoutX="64.0" layoutY="188.0" prefHeight="25.0" prefWidth="172.0" promptText="Enter Model of car as a String" />
-      <TextField fx:id="MileageTextField" layoutX="64.0" layoutY="242.0" prefHeight="25.0" prefWidth="264.0" promptText="Enter car's current mileage as a whole number" />
-      <Button fx:id="ContinueButton" layoutX="257.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleContinueButton" prefHeight="36.0" prefWidth="90.0" style="-fx-background-color: darkblue;" text="Continue" textFill="WHITE" />
+      <TextField fx:id="YearTextField" layoutX="57.0" layoutY="87.0" prefHeight="25.0" prefWidth="271.0" promptText="Enter Year car was made as a number" />
+      <TextField fx:id="MakeTextField" layoutX="57.0" layoutY="138.0" prefHeight="25.0" prefWidth="271.0" promptText="Enter Make of car as a String" />
+      <TextField fx:id="ModelTextField" layoutX="64.0" layoutY="188.0" prefHeight="25.0" prefWidth="271.0" promptText="Enter Model of car as a String" />
+      <TextField fx:id="MileageTextField" layoutX="69.0" layoutY="242.0" prefHeight="25.0" prefWidth="271.0" promptText="Enter car's current mileage as a whole number" />
+      <Button fx:id="ContinueButton" layoutX="255.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleContinueButton" prefHeight="36.0" prefWidth="90.0" style="-fx-background-color: darkblue;" text="Continue" textFill="WHITE" />
       <Button fx:id="BackButton" layoutY="-5.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="45.0" prefWidth="82.0" style="-fx-background-color: darkblue;" text="Back" textFill="WHITE" />
       <Label layoutX="75.0" layoutY="-4.0" prefHeight="45.0" prefWidth="527.0" style="-fx-background-color: darkblue;" text="                                    Add A Car" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
+      <Text layoutX="16.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expenses:" />
+      <TextField fx:id="ExpensesTextField" layoutX="69.0" layoutY="288.0" prefHeight="25.0" prefWidth="271.0" promptText="Enter car's current expenses as a whole number" />
    </children>
 </Pane>
